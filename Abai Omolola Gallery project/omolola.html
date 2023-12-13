@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          109.6deg,
+          rgb(245, 239, 249) 30.1%,
+          rgb(207, 211, 236) 100.2%
+        );
+      }
+
+      .button2 {
+        border-radius: 50px;
+        border: 1px solid #eb87b9;
+        background-color: #eb87b9;
+        transition: all 200ms ease;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+        width: 150px;
+
+        font-weight: bold;
+      }
+      .button2:hover {
+        color: #eb87b9;
+        background-color: white;
+        border-color: white;
+        cursor: pointer;
+        padding: 80;
+      }
+      .con {
+        text-align: center;
+        display: block;
+      }
+      .content {
+        color: white;
+        font-weight: bold;
+      }
+      .gallery {
+        border-radius: 50px;
+        border: 1px solid #eb87b9;
+        background-color: #eb87b9;
+        transition: all 200ms ease;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+        width: 150px;
+
+        font-weight: bold;
+      }
+      .gallery:hover {
+        color: #eb87b9;
+        background-color: white;
+        border-color: white;
+        cursor: pointer;
+        padding: 80;
+      }
+      .download {
+        border-radius: 20px;
+        border: 1px solid #eb87b9;
+        background-color: #eb87b9;
+        transition: all 200ms ease;
+        color: white;
+        margin: 20px;
+        font-weight: bold;
+      }
+      
+      
+      .download:hover {
+        color: #eb87b9;
+        background-color: white;
+        border-color: white;
+        cursor: pointer;
+      }
+      
+      .hello {
+        color: white;
+        line-height: 1;
+      }
+      .firstlist {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+      }
+
+      .logo {
+        color: white;
+        margin: 20px;
+        font-weight: bold;
+      }
+
+      .main1 {
+        background-image: url("/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/pexels-james-wheeler-1519088.jpg");
+        background-repeat: no-repeat;
+        height: 50vh;
+        object-fit: contain;
+        background-size: 100% 100%;
+      }
+
+      .images {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "box1 box2 box3 box4";
+        justify-content: space-evenly;
+        overflow: scroll;
+      }
+      .select {
+        list-style-type: none;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        margin-top: 50px;
+        overflow: auto;
+
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <ul class="firstlist">
+        <li><div class="logo">Bootstrap Gallery</div></li>
+        <li>
+          <div class="button1">
+            <button class="download">Download Now !</button>
+          </div>
+        </li>
+      </ul>
+      <div class="con">
+        <div class="content">
+          <h1>HTML Image Gallery</h1>
+        </div>
+        <div class="hello">
+          <span>
+            Right here you can see by yourself how exactly the HTML Image
+            Gallery should<br />
+            look like. Feel free to use these awesome, super customizable and
+            mobile-friend<br />
+            galleries to make your website more interesting and appealing for
+            its visitors.<br>
+            <button class="gallery">Download Gallery</button>
+          </span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="main2">
+      <div>
+        <ul class="select">
+          <li><button class="button2">All</button></li>
+          <li><button class="button2">Beautiful</button></li>
+          <li><button class="button2">Creative</button></li>
+          <li><button class="button2">Cool</button></li>
+          <li><button class="button2">Awsome</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main3">
+      <div class="images">
+        <img
+          class="box1"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/10.jpg"
+          alt="owl"
+          width="300"
+        />
+        <img
+          class="box2"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/8.jpg"
+          alt="shell"
+          width="300"
+        />
+        <img
+          class="box3"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/7.jpg"
+          alt="bird"
+          width="300"
+        />
+        <img
+          class="box3"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/6.jpg"
+          alt="countryside"
+          width="300"
+        />
+        <img
+          class="box4"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/5.jpg"
+          alt="mountain"
+          width="300"
+        />
+        <img
+          class="box5"
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/4.jpg"
+          alt="zebra"
+          width="300"
+        />
+        <img
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/3.jpg"
+          alt="ocean"
+          width="300"
+        />
+        <img
+          src="/Users/user/Downloads/Abai Omolola Gallery project/Snapshot/2.jpg"
+          alt="fox"
+          width="300"
+        />
+      </div>
+    </div>
+  </body>
+</html>
